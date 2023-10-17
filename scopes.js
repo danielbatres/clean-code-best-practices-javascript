@@ -7,3 +7,15 @@ function greet() {
 }
 
 greet() //> Hello world!
+
+// Local scope
+
+function localGreet() {
+  let localGreeting = 'Hello'
+
+  console.log(localGreeting)
+}
+
+localGreet()
+
+// console.log(localGreeting) //> error
