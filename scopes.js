@@ -31,3 +31,20 @@ localGreet()
 
 console.log(lang) //> English
 // console.log(blockGreeting) //> error
+
+// Static scope
+
+const age = 28
+
+function printAge() {
+  console.log(age)
+}
+
+function mainApp() {
+  const age = 26
+  printAge()
+}
+
+mainApp() //> 28
+
+// Values ​​are determined at compile time and not execution time
