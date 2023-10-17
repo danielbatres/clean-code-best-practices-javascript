@@ -19,3 +19,15 @@ function localGreet() {
 localGreet()
 
 // console.log(localGreeting) //> error
+
+// Block scope
+
+{
+  let blockGreeting = 'Hello block'
+  var lang = 'English'
+
+  console.log(blockGreeting)
+}
+
+console.log(lang) //> English
+// console.log(blockGreeting) //> error
